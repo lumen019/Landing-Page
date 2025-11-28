@@ -45,21 +45,22 @@ a {
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
     background: #def3f6; 
     color: black;
-    justify-content: space-evenly;
 }
 
 .hero-left,
 .hero-right {
-    flex: 1;
+    flex-basis: 50%;
+    max-width: 50%;
 }
 
 .hero-left {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 50px 200px;
+    padding: clamp(20px, 5vw, 50px)
 }
 
 .herotext1{
@@ -76,12 +77,11 @@ a {
 
 .buttons button {
   font-size: 16px;
-  flex-shrink: 0;
   border: none;
   border-radius: 8px;
   background: #064273;
   color: white;
-  padding: 20px 100px;
+  padding: 5px 50px;
 }
 
 .buttons {
@@ -94,21 +94,23 @@ a {
 .hero-right {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.hero-right img{
-    flex: 6;
+.hero-right img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    flex: 1;
 }
 
 .colorblock {
-    flex:1;
     width: 100%;
-    height: auto;
     background: #064273;
     padding: 40px;
+    object-fit: contain;
+    flex: 1;
 }
 
 
@@ -146,7 +148,7 @@ a {
 
 .info-card img{
     width: 100%;
-    height: auto;
+    height: 260px;
 }
 
 .card-content {
@@ -179,7 +181,7 @@ a {
     flex-direction: column;
     background-image: url(pictures/quote.jpg);
     background-position: center center;
-    padding: 150px 450px;
+    padding: 150px clamp(220px, 10vw, 450px);
 }
 
 .quote-block {
