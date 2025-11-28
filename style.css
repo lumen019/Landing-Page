@@ -11,19 +11,22 @@ body {
 
 .header {
     background: #def3f6; 
-    padding: 0 200px 0 0 ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 8px;
 }
 
 .header-left {
-    background-color: #1da2d8;
+    background-color:#1da2d8;
     color: white;
+    padding: 16px 92px;
 }
 
 .header-right a {
     color: black;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .title {
@@ -33,6 +36,7 @@ body {
 
 .header-right {
     display: flex;
+    justify-content: flex-end;
     gap: 16px;
 }
 
@@ -50,30 +54,54 @@ a {
 .hero {
     display: flex;
     flex: 2;
-    background: #064273; 
-    color: white;
+    background: #def3f6; 
+    color: black;
     justify-content: space-evenly;
-}
-
-.hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 200px;
-}
-
-.hero-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 50px 200px;
 }
 
 .hero-left,
 .hero-right {
     flex: 1;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 200px;
+}
+
+.herotext1{
+    font-size: 40px;
+}
+
+.herotext2 {
+    font-size: 100px;
+}
+
+.herotext3 {
+    font-size: 24px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  background: #1da2d8;
+  padding: 20px 100px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.hero-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -83,20 +111,39 @@ a {
     display: flex;
     flex-direction: column;
     flex: 2;
-    background: #76b6c4;
+    background-image: url(pictures/info.jpg);
+    color: white;
     min-height: 575px;
+    justify-content: space-between ;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 85px;
+    padding: 24px 400px;
+    margin: 0;
+    flex: 1;
 }
 
 .info-wrap {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex: 2;
+    padding: 200px 100px;
+}
+
+.info-container{
+    margin: 25px;
+    color: aliceblue;
 }
 
 .info-container img {
-    flex: 1;
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
+    height: 250px;
+    width: 400px;
 }
 
 
@@ -108,12 +155,10 @@ a {
     color: white;
     background-image: url(pictures/quote.jpg);
     background-position: center center;
-    flex: 1;
-    justify-content: center;
     align-items: center;
     padding: 150px 600px;
-    font-size: x-large;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 900;
     flex-shrink: 0;
 }
 
