@@ -6,16 +6,11 @@ body {
     flex-direction: column;
 }
 
-.hero,
-.info {
-    min-height: 575px;
-    padding: 0 200px;
-}
 
-/* End of Misc */
+/* Sea Life Landing Page */
 
 .header {
-    background: #1d0746; 
+    background: #064273; 
     color: white;
     display: flex;
     align-items: center;
@@ -45,16 +40,25 @@ a {
 .hero {
     display: flex;
     flex: 2;
-    background: #1d0746; 
+    background: #064273; 
     color: white;
-    align-items: center;
-    gap: 100px;
+    justify-content: space-evenly;
 }
 
 .hero-left {
     display: flex;
     flex-direction: column;
-    padding: 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 200px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 200px;
 }
 
 .hero-left,
@@ -69,6 +73,8 @@ a {
     display: flex;
     flex-direction: column;
     flex: 2;
+    background: #76b6c4;
+    min-height: 575px;
 }
 
 .info-wrap {
@@ -98,10 +104,11 @@ a {
 .signup-wrapper {
     flex: 1;
     padding: 50px 200px;
+    background: #7fcdff;
 }
 
 .signup {
-    background-image:linear-gradient(to bottom left, #5a15db, #1d0746); 
+    background:#1da2d8 ; 
     color: white;
     display: flex;
     padding: 50px;
@@ -111,7 +118,7 @@ a {
 /* End of Sign up */
 
 .footer {
-    background: #1d0746;
+    background: #064273;
     color: white;
     display: flex;
     align-items: center;
