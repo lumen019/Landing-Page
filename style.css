@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -6,23 +7,23 @@ body {
 }
 
 .hero,
-.info,
-.quote {
-    min-height: 400px;
+.info {
+    min-height: 575px;
+    padding: 0 200px;
 }
 
 /* End of Misc */
 
 .header {
-    background: gray;
+    background: #1d0746; 
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 200px;
+
 }
 
-.header-left {
-    
-}
 
 .header-right {
     display: flex;
@@ -36,14 +37,24 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /* End of Header */
 
 .hero {
     display: flex;
-    background: gray;
     flex: 2;
+    background: #1d0746; 
+    color: white;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
 }
 
 .hero-left,
@@ -51,10 +62,6 @@ a {
     flex: 1;
 }
 
-.hero-right {
-    width: 100px;
-    height: 100px;
-}
 
 /* End of Hero */
 
@@ -64,8 +71,9 @@ a {
     flex: 2;
 }
 
-.info-container {
+.info-wrap {
     display: flex;
+    flex-direction: row;
 }
 
 /* End of Info */
@@ -73,30 +81,41 @@ a {
 .quote {
     display: flex;
     flex-direction: column;
-    background: lightgray;
+    color: white;
+    background-image: url(quote.jpg);
+    background-position: center center;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 600px;
+    font-size: x-large;
+    font-weight: bold;
+    flex-shrink: 0;
 }
 
 /* End of Quote */
 
 .signup-wrapper {
-    
     flex: 1;
-    padding: 50px;
+    padding: 50px 200px;
 }
 
 .signup {
-    background: lightblue;
+    background-image:linear-gradient(to bottom left, #5a15db, #1d0746); 
+    color: white;
     display: flex;
     padding: 50px;
+    border-radius: 10px;
 }
-
+ 
 /* End of Sign up */
 
 .footer {
-    background: gray;
+    background: #1d0746;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
+    padding: 20px;
 }
