@@ -45,7 +45,6 @@ a {
 
 .hero {
     display: flex;
-    flex: 2;
     background: #def3f6; 
     color: black;
     justify-content: space-evenly;
@@ -60,7 +59,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 100px 50px;
+    padding: 50px 200px;
 }
 
 .herotext1{
@@ -133,6 +132,7 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 36px;
 }
 
 .info-card {
@@ -177,20 +177,31 @@ a {
 .quote {
     display: flex;
     flex-direction: column;
-    color: white;
     background-image: url(pictures/quote.jpg);
     background-position: center center;
-    align-items: center;
-    padding: 150px 300px;
-    font-size: 48px;
+    padding: 150px 450px;
+}
+
+.quote-block {
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.author h3 {
+    color: white;
+    font-size: 32px;
     font-weight: 700;
-    flex-shrink: 0;
 }
 
 /* Signup Styling                       */
 
 .signup-wrap {
-    flex: 1;
     padding: 50px 200px;
     background: #7fcdff;
 }
