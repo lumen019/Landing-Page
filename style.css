@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    
+}
+
+.header-right {
+    display: flex;
+    gap: 16px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End of Header */
+
+.hero {
+    display: flex;
+    background: gray;
+    flex: 2;
+    min-height: 100vh;
+}
+
+.hero-left,
+.hero-right {
+    flex: 1;
+}
+
+.hero-right {
+    width: 100px;
+    height: 100px;
+}
+
+/* End of This Website is awesome */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    min-height: 100vh;
+}
+
+.info-container {
+    display: flex;
+}
+
+/* End of random info */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    flex: 1;
+    min-height: 100vh;
+}
+
+/* End of random quote */
+
+.signup {
+    margin: 100px 200px;
+    background: lightblue;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+}
+
+/* End of Sign up */
+
+.footer {
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
