@@ -1,43 +1,34 @@
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
     display: flex;
     flex-direction: column;
 }
 
 
-/* Header Styling*/
+/* Header Styling                           */
 
 .header {
-    background: #def3f6; 
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-right: 8px;
+    align-items: center;
+    background-color:#def3f6;
 }
 
-.header-left {
-    background-color:#1da2d8;
-    color: white;
-    padding: 16px 92px;
+.header-logo
+.header-links {
+    flex: 1;
 }
 
-.header-right a {
-    color: black;
-    font-size: 24px;
-    font-weight: 900;
-}
-
-.title {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.header-right {
+.header-links {
     display: flex;
-    justify-content: flex-end;
-    gap: 16px;
+    gap: 48px;
+    padding: 8px 16px;
 }
 
 ul {
@@ -46,10 +37,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-size: 16px;
 }
 
-/* Hero Styling*/
+/* Hero Styling                          */
 
 .hero {
     display: flex;
@@ -68,27 +60,28 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 100px 200px;
+    padding: 100px 50px;
 }
 
 .herotext1{
-    font-size: 40px;
+    font-size: 26px;
 }
 
 .herotext2 {
-    font-size: 100px;
+    font-size: 48px;
 }
 
 .herotext3 {
-    font-size: 24px;
+    font-size: 16px;
 }
 
-button {
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
+.buttons button {
+  font-size: 16px;
+  flex-shrink: 0;
   border: none;
   border-radius: 8px;
-  background: #1da2d8;
+  background: #064273;
+  color: white;
   padding: 20px 100px;
 }
 
@@ -96,58 +89,90 @@ button {
     display: flex;
     justify-content: flex-start;
     gap: 16px;
+    width: 500px;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-right img{
+    flex: 6;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-
-/* Info Styling */
-
-.info {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    background-image: url(pictures/info.jpg);
-    color: white;
-    min-height: 575px;
-    justify-content: space-between ;
+.colorblock {
+    flex:1;
+    width: 100%;
+    height: auto;
+    background: #064273;
+    padding: 40px;
 }
 
-.info-title {
+
+/* Info Styling                          */
+
+.info {
+    background: #064273;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+.info-title{
+    display: flex;
     justify-content: center;
-    font-size: 85px;
-    padding: 24px 400px;
-    margin: 0;
-    flex: 1;
+    font-size: 28px;
+    padding: 36px 0;
+    color: white;
 }
 
 .info-wrap {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 30px;
-    flex: 2;
-    padding: 200px 100px;
+    flex-wrap: wrap;
 }
 
-.info-container{
-    margin: 25px;
-    color: aliceblue;
+.info-card {
+    width: 325px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
-.info-container img {
-    height: 250px;
-    width: 400px;
+.info-card img{
+    width: 100%;
+    height: auto;
 }
 
+.card-content {
+    padding: 16px;
+}
 
-/* Quote Styling */
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #064273;
+    color: white;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+/* Quote Styling                         */
 
 .quote {
     display: flex;
@@ -156,13 +181,13 @@ button {
     background-image: url(pictures/quote.jpg);
     background-position: center center;
     align-items: center;
-    padding: 150px 600px;
-    font-size: 50px;
-    font-weight: 900;
+    padding: 150px 300px;
+    font-size: 48px;
+    font-weight: 700;
     flex-shrink: 0;
 }
 
-/* Signup Styling */
+/* Signup Styling                       */
 
 .signup-wrap {
     flex: 1;
@@ -174,11 +199,27 @@ button {
     background:#1da2d8 ; 
     color: white;
     display: flex;
+    justify-content: center;
     padding: 50px;
     border-radius: 10px;
 }
+
+.signup-left,
+.signup-right {
+    flex: 1;
+}
+
+.signup-btn {
+    font-size: 16px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px;
+    background: #064273;
+    color: white;
+    padding: 20px 100px;
+}
  
-/* Footer Styling */
+/* Footer Styling                      */
 
 .footer {
     background: #064273;
