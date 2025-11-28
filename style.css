@@ -5,6 +5,14 @@ body {
     flex-direction: column;
 }
 
+.hero,
+.info,
+.quote {
+    min-height: 400px;
+}
+
+/* End of Misc */
+
 .header {
     background: gray;
     display: flex;
@@ -36,7 +44,6 @@ a {
     display: flex;
     background: gray;
     flex: 2;
-    min-height: 100vh;
 }
 
 .hero-left,
@@ -49,37 +56,39 @@ a {
     height: 100px;
 }
 
-/* End of This Website is awesome */
+/* End of Hero */
 
 .info {
     display: flex;
     flex-direction: column;
     flex: 2;
-    min-height: 100vh;
 }
 
 .info-container {
     display: flex;
 }
 
-/* End of random info */
+/* End of Info */
 
 .quote {
     display: flex;
     flex-direction: column;
     background: lightgray;
     flex: 1;
-    min-height: 100vh;
 }
 
-/* End of random quote */
+/* End of Quote */
+
+.signup-wrapper {
+    
+    flex: 1;
+    padding: 50px;
+}
 
 .signup {
-    margin: 100px 200px;
     background: lightblue;
     display: flex;
-    flex: 1;
-    min-height: 100vh;
+    padding: 50px;
 }
 
 /* End of Sign up */
