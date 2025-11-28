@@ -82,6 +82,14 @@ a {
     flex-direction: row;
 }
 
+.info-container {
+    flex: 1;
+    margin: 10%;
+    border-radius: 50%;
+    background: white;
+}
+
+
 /* End of Info */
 
 .quote {
