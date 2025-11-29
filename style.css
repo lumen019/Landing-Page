@@ -209,28 +209,24 @@ a {
 .signup-wrap {
     padding: 50px 200px;
     background: #7fcdff;
+    
 }
 
 .signup {
     background:#1da2d8 ; 
     color: white;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
     border-radius: 10px;
-}
-
-.signup-left,
-.signup-right {
-    flex: 1;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .signup-btn {
     font-size: 16px;
-    flex-shrink: 0;
-    border: none;
+    border: 2px solid white;
     border-radius: 8px;
-    background: #064273;
+    background: #1da2d8;
     color: white;
     padding: 20px 100px;
 }
